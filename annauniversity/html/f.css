@@ -1,0 +1,233 @@
+
+.navbar {
+  margin: 0;
+  background-color: deepskyblue;
+  padding-left: 700px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: deeppink;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:deepskyblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+th{
+	background-color: skyblue;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+ padding-right: 200px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.img {
+   float: left;
+}
+
+
+$white:               #fff !default;       // RGB: 255, 255, 255
+$color-sand:          #f4f4f4 !default;    // RGB: 244, 244, 244 
+$color-silver:        #ccc !default;       // RGB: 204, 204, 204
+$color-dove-gray:     #707070 !default;    // RGB: 112, 112, 112
+$color-gray:          #58595b !default;    // RGB: 88, 89, 91
+$color-mine-shaft:    #333 !default;       // RGB: 51, 51, 51
+$color-navy:          #17355e !default;    // RGB: 23, 53, 94
+$black:               #000 !default;       // RGB: 0, 0, 0,
+
+// color-variables
+$color-red:           #df4841 !default;    // RGB: 223, 72, 65
+$color-dark-red:      #a73631 !default;    // RGB: 167, 54, 49
+$color-aqua:          #74cdde !default;    // RGB: 116, 205, 222
+
+// 
+// Spacers
+$spacer:    0.625rem !default;
+
+// 
+// Components
+$border-width:     1px !default; 
+$border-color:     $color-silver !default;
+
+$border-radius:    0.25rem !default;
+
+// 
+// Typography
+$font-family-roboto:     'roboto' !default;
+$font-family-base:       $font-family-roboto !default;
+
+$font-size-base:         .75rem !default;
+$font-size-sm:           $font-size-base * .875 !default;
+$font-size-lg:           $font-size-base * 1.25 !default;
+
+$font-weight-normal:     400 !default;
+$font-weight-bold:       700 !default;
+$font-weight-base:       $font-weight-normal !default; 
+
+$line-height-sm:         1 !default; 
+$line-height-lg:         1.5 !default;
+$line-height-base:       1.25 !default;
+
+// 
+// Buttons
+$btn-font-size:         $font-size-base !default;
+$btn-font-weight:       $font-weight-base !default;
+$btn-line-height:       $line-height-base !default;
+
+$btn-border-width:      $border-width !default;
+$btn-border-radius:     .4rem !default;
+
+$btn-padding-y:         0.625rem !default;
+$btn-padding-x:         1.25rem !default;
+
+$btn-transition:        all 0.6s ease-in-out !default;
+
+// 
+// Forms
+// form-input-variables
+$input-font-family:            $font-family-base !default;
+$input-font-size:              $font-size-base !default;
+$input-font-weight:            $font-weight-base !default;
+$input-line-height:            $line-height-base !default;
+$input-padding-y:              0.938rem !default;
+$input-padding-x:              0.938rem !default;
+
+$input-color:                  $color-gray !default;
+$input-bg:                     $white !default;
+
+$input-height:                 35px !default; 
+
+$input-border-width:           $border-width !default;
+$input-border-color:           $color-dove-gray !default;
+$input-border-radius:          $border-radius !default;
+$input-box-shadow:             none !default;
+
+$input-focus-color:            $input-color !default;
+$input-focus-bg:               $input-bg !default;
+$input-focus-border-color:     $color-aqua !default;
+
+$input-transition:             border-color .25s ease-in-out;
+
+// form-floating-variables
+$form-floating-height:             ($input-height + 15) !default; // ? IS THIS NEEDED ?
+$form-floating-padding-y:          $input-padding-x + .1 !default;
+$form-floating-padding-x:          $input-padding-y + .1 !default;
+$form-floating-input-padding-t:    1.625rem !default;
+$form-floating-input-padding-b:    .625rem !default;
+$form-floating-label-opacity:      .65 !default;
+$form-floating-label-transform:    scale(.75) translateY(-.5rem) translateX(.15rem) !default;
+$form-floating-transition:         opacity .1s ease-in-out, transform .1s ease-in-out !default;
+
+// form-feedback-variables
+$form-feedback-font-size:         $font-size-base !default;
+$form-feedback-invalid-color:     $color-red !default;
+$form-feedback-margin-top:        ($spacer / 2) !default;
+
+// form-validation-states
+$form-feedback-invalid-color:     $color-red !default;
+
+// --------------------------------------------------------
+// >> Base Styles
+// --------------------------------------------------------
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%; 
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $color-gray;
+  margin: 0;
+  background-color: $color-sand;
+}
+
+
+
+marquee{
+
+  color: red;
+  font-size: ;
+}
+
+
+
+
+
