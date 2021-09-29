@@ -1,6 +1,7 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="f.css">
+    <link rel="stylesheet" type="text/css" href="f.css">
+		<link rel="stylesheet" type="text/css" href="formvalid.css">
     <link rel="stylesheet" type="text/css" href="popup.css">
 	</head>
 	<body>
@@ -47,22 +48,22 @@
 		<div class="content">
 			
             
-              <div>
-		First Name:<input type="text" id="" name="" value=""/></br></br></br>
-		Last Name:<input type="text" id="" name="" value=""/></br></br></br>
-		User Name:<input type="text" id="" name="" value=""/></br></br></br>
-		password:<input type="text" id="" name="" value=""/></br></br></br>
-		mobile.no:<input type="text" id="" name="" value=""/></br></br></br>
-		Address:<input type="text area" id="" name="" value=""/></br></br></br>
-	   Collage Name: <select name="collagename" id="collagename">
-    <option value="Annauniversity">Annauniversity</option>
-    <option value="Kamararaj university">Kamararaj university</option>
-    <option value="Annamalai university">Annamalai university</option>
-    <option value="MGR university">MGR university</option></select></div> </br></br>
-        <form>
-
-    <button onclick="submit">submit</button>
-    <button onclick="reset">Reset</button>
+              <body>
+      <div class="form-signup" id="singup">
+        <form action="ans.html" method="get" onsubmit="return singup()">
+          <label for="firstname">First Name: <input type="text" class="fname" name="firstname" placeholder="Enter First Name"></label><br>
+          <label for="lastname">Last Name: <input type="text" class="lname" name="lastname" placeholder="Enter Last Name"></label><br>
+          <label for="email">Email: <input type="email" class="email" name="email" placeholder="Enter Email Address"></label><br>
+          <label for="password">Password: <input type="password" class="pwd" name="password" placeholder="Enter Password"></label><br>
+          <label for="confrm password">Confirm Password: <input type="password" class="conpwd" name="password" placeholder="Confirm Password"></label><br>
+          <label for="query">Query: <textarea name="query" class="query" rows="5" cols="15"></textarea></label>
+          <p class="emsgb"></p>
+          <input type="submit" name="submit" value="Submit">
+          <input type="reset" name="reset" value="Reset">
+        </form>
+      </div>
+      <script src="javascript.js"></script>
+    
 
   
   </form>
