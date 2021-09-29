@@ -2,6 +2,8 @@
 	<head>
 <link rel="stylesheet" type="text/css" href="f.css">
 <link rel="stylesheet" type="text/css" href="s.css">
+<link rel="stylesheet" type="text/css" href="formvalid.css">
+    <link rel="stylesheet" type="text/css" href="popup.css">
 </head>
 <body>
 <div class="navbar">
@@ -31,42 +33,46 @@
    <a href="home.html">About US</a>
   <a href="contact.html">Contact Us</a>
 </div> </br></br></br></br></br>
+
+
+<script type="text/javascript" href="javascript.js"></script>
+
+<div class="box">
+  <a class="button" href="#popup1">click</a>
+</div>
+
+<div id="popup1" class="overlay">
+  <div class="popup">
+    <h2>Student Login</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+      
+            
+              <body>
+      <div class="form-signup" id="singup">
+        <form action="ans.html" method="get" onsubmit="return singup()">
+          <label for="firstname">First Name: <input type="text" class="fname" name="firstname" placeholder="Enter First Name"></label><br>
+          <label for="lastname">Last Name: <input type="text" class="lname" name="lastname" placeholder="Enter Last Name"></label><br>
+          <label for="email">Email: <input type="email" class="email" name="email" placeholder="Enter Email Address"></label><br>
+          <label for="password">Password: <input type="password" class="pwd" name="password" placeholder="Enter Password"></label><br>
+          <label for="confrm password">Confirm Password: <input type="password" class="conpwd" name="password" placeholder="Confirm Password"></label><br>
+          <label for="query">Query: <textarea name="query" class="query" rows="5" cols="15"></textarea></label>
+          <p class="emsgb"></p>
+          <input type="submit" name="submit" value="Submit">
+          <input type="reset" name="reset" value="Reset">
+        </form>
+      </div>
+      <script src="javascript.js"></script>
+    
+
   
-  <script type="text/javascript" href="a.js"></script>
-    <h3>Registration</h3>
-    <hr />
-    <!-- Form Wrapper -->
-    <form name="registration-form" id="registrationForm" method="POST" action="" role="form">
-      <div class="form-floating">
-        <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First Name" />
-        <label for="firstName">First Name</label>
-      </div>
-      <div class="form-floating">
-        <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last Name" />
-        <label for="lastName">Last Name</label>
-      </div>
-      <div class="form-floating">
-        <input type="email" name="emailAddress" class="form-control" id="emailAddress" placeholder="Email Address" />
-        <label for="emailAddress">Email Address</label>
-      </div>
-      <div class="form-floating">
-        <input type="text" name="userName" class="form-control" id="userName" placeholder="User Name" />
-        <label for="userName">User Name</label>
-      </div>
-      <div class="form-floating">
-        <input type="password" name="password" class="form-control" id="password" placeholder="Password" />
-        <label for="password">Password</label>
-      </div>
-      <div class="form-floating">
-        <input type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirm Password" />
-        <label for="confirmPassword">Confirm Password</label>
-      </div>
-      <div class="form-button-set">
-        <button type="submit" class="c-button c-button--navy">Submit</button>
-      </div>
-    </form>
-    <!--/ Form Wrapper -->
-  </section></br></br></br>
+  </form>
+  </br></br>
+    </div>
+  </div>
+</div>
+
+  
 <a href="https://institutes.aglasem.com/anna-university-result/">Click To See The Exam Results.......................</a>
 		
 	</body>
