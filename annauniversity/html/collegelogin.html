@@ -1,6 +1,8 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="f.css">
+    <link rel="stylesheet" type="text/css" href="formvalid.css">
+    <link rel="stylesheet" type="text/css" href="popup.css">
 	</head>
 	<body>
 		<div class="navbar">
@@ -32,41 +34,46 @@
   <a href="contact.html">Contact Us</a>
 </div>
              <h1>Click to Login as a college admin/faculty</h1>
+
+
+
+
+
 <div class="box">
-	<a class="button" href="#popup1">login</a>
+  <a class="button" href="#popup1">login</a>
 </div>
 
 <div id="popup1" class="overlay">
-	<div class="popup">
-		<h2>College Login</h2>
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-			
+  <div class="popup">
+    <h2>Student Login</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+      
             
-              <div>
-		College Name:<input type="text" id="" name="" value=""/></br></br></br>
-		 College Id:<input type="text" id="" name="" value=""/></br></br></br>
-		User Name:<input type="text" id="" name="" value=""/></br></br></br>
-		password:<input type="text" id="" name="" value=""/></br></br></br>
-		 College Contact.no:<input type="text" id="" name="" value=""/></br></br></br>
-		 College Address:<input type="text area" id="" name="" value=""/></br></br></br>
-	   university name: <select name="collagename" id="collagename">
-    <option value="Annauniversity">Annauniversity</option>
-    <option value="Kamararaj university">Kamararaj university</option>
-    <option value="Annamalai university">Annamalai university</option>
-    <option value="MGR university">MGR university</option></select></div> </br></br>
-        <form>
-
-    <button onclick="submit">submit</button>
-    <button onclick="reset">Reset</button>
+              <body>
+      <div class="form-signup" id="singup">
+        <form action="ans.html" method="get" onsubmit="return singup()">
+          <label for="firstname">First Name: <input type="text" class="fname" name="firstname" placeholder="Enter First Name"></label><br>
+          <label for="lastname">Last Name: <input type="text" class="lname" name="lastname" placeholder="Enter Last Name"></label><br>
+          <label for="email">Email: <input type="email" class="email" name="email" placeholder="Enter Email Address"></label><br>
+          <label for="password">Password: <input type="password" class="pwd" name="password" placeholder="Enter Password"></label><br>
+          <label for="confrm password">Confirm Password: <input type="password" class="conpwd" name="password" placeholder="Confirm Password"></label><br>
+          <label for="query">Query: <textarea name="query" class="query" rows="5" cols="15"></textarea></label>
+          <p class="emsgb"></p>
+          <input type="submit" name="submit" value="Submit">
+          <input type="reset" name="reset" value="Reset">
+        </form>
+      </div>
+      <script src="javascript.js"></script>
+    
 
   
   </form>
   </br></br>
-		</div>
-	</div>
-</div>	
+    </div>
+  </div>
+</div>  
 
 
-	</body>
+  </body>
 </html>
